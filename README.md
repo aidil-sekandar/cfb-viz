@@ -3,7 +3,7 @@
 **A Python visualization library for college football.**
 
 > **Current development version: v0.1.0 (pre-release)**  
-> **Status:** Early development — designing the schedule matrix data contract.
+> **Status:** Early development — designing the schedule matrix.
 
 ## Overview
 
@@ -22,7 +22,7 @@ The project initially focuses on NCAA Division I FBS football.
 - [x] Define the schedule DataFrame structure
 - [x] Implement schedule data validation
 - [x] Write automated validation tests using `pytest`
-- [ ] Address additional validation edge cases
+- [x] Address additional validation edge cases
 - [ ] Implement schedule matrix visualization
 - [ ] Add visualization customization options
 

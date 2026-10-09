@@ -32,7 +32,7 @@ def test_negative_week():
         }
     )
 
-    with pytest.raises(ValueError, match="week must contain positive integers"):
+    with pytest.raises(ValueError, match="week must contain nonnegative integers"):
         validate_schedule(df)
 
 
@@ -49,7 +49,7 @@ def test_missing_columns():
         validate_schedule(df)
 
 
-@pytest.mark.parametrize("week", [0, -1, 2.5, "3"])
+@pytest.mark.parametrize("week", [-1, 2.5, "3"])
 def test_invalid_week(week):
     df = pd.DataFrame(
         {
@@ -60,8 +60,21 @@ def test_invalid_week(week):
         }
     )
 
-    with pytest.raises(ValueError, match="week must contain positive integers"):
+    with pytest.raises(ValueError, match="week must contain nonnegative integers"):
         validate_schedule(df)
+
+
+def test_week_zero():
+    df = pd.DataFrame(
+        {
+            "week": [0],
+            "home_team": ["Alabama"],
+            "away_team": ["LSU"],
+            "neutral_site": [False],
+        }
+    )
+
+    validate_schedule(df)
 
 
 @pytest.mark.parametrize("column", ["home_team", "away_team"])
@@ -143,3 +156,44 @@ def test_multiple_games_same_week():
         ValueError, match="A team cannot play multiple games in the same week"
     ):
         validate_schedule(df)
+
+
+@pytest.mark.parametrize("name", [" Alabama", "Alabama ", " Alabama "])
+def test_team_name_whitespace(name):
+    df = pd.DataFrame(
+        {
+            "week": [1],
+            "home_team": ["Georgia"],
+            "away_team": ["LSU"],
+            "neutral_site": [False],
+        }
+    )
+
+    df.loc[0, "home_team"] = name
+
+    with pytest.raises(
+        ValueError, match="team names must not contain leading or trailing whitespace"
+    ):
+        validate_schedule(df)
+
+
+def test_empty_schedule():
+    df = pd.DataFrame(columns=["week", "home_team", "away_team", "neutral_site"])
+
+    with pytest.raises(ValueError, match="Schedule cannot be empty"):
+        validate_schedule(df)
+
+
+def test_extra_columns():
+    df = pd.DataFrame(
+        {
+            "week": [1],
+            "home_team": ["Georgia"],
+            "away_team": ["LSU"],
+            "neutral_site": [False],
+            "home_score": [28],
+            "away_score": [21],
+        }
+    )
+
+    validate_schedule(df)

@@ -13,18 +13,25 @@ def validate_schedule(df):
     if missing_columns:
         raise ValueError(f"Missing required columns: {missing_columns}")
 
+    if df.empty:
+        raise ValueError("Schedule cannot be empty")
+
     # check for week's validity (+ integer)
     if (
         not pd.api.types.is_integer_dtype(df["week"])
-        or not (df["week"] > 0).all()
+        or not (df["week"] >= 0).all()
         or df["week"].isna().any()
     ):
-        raise ValueError("week must contain positive integers")
+        raise ValueError("week must contain nonnegative integers")
 
     # check for team's name validity
     for column in ["home_team", "away_team"]:
         if not all(isinstance(name, str) and bool(name.strip()) for name in df[column]):
             raise ValueError("team name must contain nonempty strings")
+        if any(name.strip() != name for name in df[column]):
+            raise ValueError(
+                "team names must not contain leading or trailing whitespace"
+            )
 
     # check if any teams playing against itself
     if (df["home_team"] == df["away_team"]).any():
