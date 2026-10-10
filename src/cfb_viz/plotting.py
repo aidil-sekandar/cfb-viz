@@ -11,19 +11,39 @@ location_codes = {
     "BYE": 3,
 }
 
+default_colors = {
+    "H": "#ffffff",
+    "A": "#f8e6c7",
+    "N": "#c9dec4",
+    "BYE": "#dedfe1",
+}
 
-def plot_schedule(df):
+color_order = ["H", "A", "N", "BYE"]
+
+
+def plot_schedule(df, figsize=None, colors=None):
     team_schedule = _to_team_schedule(df)
 
     location_matrix = _to_matrix(team_schedule, "location")
     opponent_matrix = _to_matrix(team_schedule, "opponent")
 
+    n_teams, n_weeks = location_matrix.shape
+    default_figsize = (max(8, n_weeks * 1.5), max(4, n_teams * 0.6))
+
+    if figsize is None:
+        figsize = default_figsize
+
+    fig, ax = plt.subplots(figsize=figsize)
+
     color_matrix = location_matrix.replace(location_codes)
     color_matrix = color_matrix.astype(int)
 
-    cmap = ListedColormap(["#ffffff", "#f8e6c7", "#c9dec4", "#dedfe1"])
+    if colors is None:
+        colors = default_colors
+    else:
+        colors = default_colors | colors
 
-    fig, ax = plt.subplots(figsize=(10, 5))
+    cmap = ListedColormap([colors[key] for key in color_order])
 
     sns.heatmap(
         color_matrix,

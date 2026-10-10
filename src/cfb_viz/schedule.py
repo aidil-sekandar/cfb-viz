@@ -30,7 +30,7 @@ def _to_team_schedule(df):
     return team_schedule
 
 
-def _to_matrix(team_schedule, values):
+def _to_matrix(team_schedule: pd.DataFrame, values: str) -> pd.DataFrame:
     min_week = team_schedule["week"].min()
     max_week = team_schedule["week"].max()
 
