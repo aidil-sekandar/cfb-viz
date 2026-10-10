@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 
-def prepare_schedule(df):
+def _to_team_schedule(df):
     validate_schedule(df)
 
     home_games = df[["week", "home_team", "away_team", "neutral_site"]].rename(
@@ -26,14 +26,23 @@ def prepare_schedule(df):
         columns=["neutral_site"]
     )
 
+    print("\nteam schedule:\n", team_schedule)
+    return team_schedule
+
+
+def _to_matrix(team_schedule, values):
     min_week = team_schedule["week"].min()
     max_week = team_schedule["week"].max()
 
-    schedule_matrix = team_schedule.pivot(
-        index="team", columns="week", values="location"
-    )
-    schedule_matrix = schedule_matrix.reindex(
+    matrix = team_schedule.pivot(index="team", columns="week", values=values)
+    return matrix.reindex(
         columns=range(min_week, max_week + 1), fill_value="BYE"
     ).fillna("BYE")
 
-    return schedule_matrix
+
+def prepare_schedule(df):
+    team_schedule = _to_team_schedule(df)
+
+    location_matrix = _to_matrix(team_schedule, "location")
+
+    return location_matrix
