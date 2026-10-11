@@ -10,4 +10,4 @@ wheels/
 .venv
 
 # Local Test
-exp.ipynb
+mock/

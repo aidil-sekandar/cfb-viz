@@ -1,16 +1,15 @@
 [project]
 name = "cfb-viz"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Python visualization library for NCAA college football."
 readme = "README.md"
-authors = [
-    { name = "Aidil Iskandar", email = "aidiliskandar63@gmail.com" }
-]
+authors = [{ name = "Aidil Iskandar" }]
 requires-python = ">=3.14"
 dependencies = [
     "matplotlib>=3.11.2",
     "numpy>=2.5.3",
     "pandas>=3.0.6",
+    "pillow>=12.3.0",
     "seaborn>=0.13.2",
 ]
 
@@ -19,6 +18,4 @@ requires = ["uv_build>=0.12.21,<0.13.0"]
 build-backend = "uv_build"
 
 [dependency-groups]
-dev = [
-    "pytest>=9.1.1",
-]
+dev = ["pytest>=9.1.1"]

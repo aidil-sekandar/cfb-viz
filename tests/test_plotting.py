@@ -119,3 +119,103 @@ def test_plot_schedule_does_not_mutate_input(sample_schedule):
         pd.testing.assert_frame_equal(sample_schedule, original)
     finally:
         plt.close(fig)
+
+
+@pytest.fixture
+def ncaa_schedule():
+    return pd.DataFrame(
+        {
+            "week": [1, 2],
+            "home_team": [
+                "Alabama Crimson Tide",
+                "Virginia Cavaliers",
+            ],
+            "away_team": [
+                "Virginia Cavaliers",
+                "Alabama Crimson Tide",
+            ],
+            "neutral_site": [False, False],
+        }
+    )
+
+
+def get_annotations(ax):
+    return [text.get_text() for text in ax.texts]
+
+
+def test_opponent_display_full(ncaa_schedule):
+    fig, ax = plot_schedule(ncaa_schedule, opponent_display="full")
+
+    try:
+        annotations = get_annotations(ax)
+
+        assert "Alabama Crimson Tide" in annotations
+        assert "Virginia Cavaliers" in annotations
+    finally:
+        plt.close(fig)
+
+
+def test_opponent_display_short(ncaa_schedule):
+    fig, ax = plot_schedule(ncaa_schedule, opponent_display="short")
+
+    try:
+        annotations = get_annotations(ax)
+
+        assert "Alabama" in annotations
+        assert "Virginia" in annotations
+
+        assert "Alabama Crimson Tide" not in annotations
+        assert "Virginia Cavaliers" not in annotations
+    finally:
+        plt.close(fig)
+
+
+def test_opponent_display_abbreviation(ncaa_schedule):
+    fig, ax = plot_schedule(
+        ncaa_schedule,
+        opponent_display="abbreviation",
+    )
+
+    try:
+        annotations = get_annotations(ax)
+
+        assert "ALA" in annotations
+        assert "UVA" in annotations
+    finally:
+        plt.close(fig)
+
+
+def test_opponent_display_default(ncaa_schedule):
+    fig, ax = plot_schedule(ncaa_schedule)
+
+    try:
+        annotations = get_annotations(ax)
+
+        assert "Alabama Crimson Tide" in annotations
+        assert "Virginia Cavaliers" in annotations
+    finally:
+        plt.close(fig)
+
+
+@pytest.mark.parametrize("display", ["logo", "invalid", "SHORT", None])
+def test_opponent_display_invalid(ncaa_schedule, display):
+    with pytest.raises(ValueError, match="Invalid opponent display"):
+        fig, _ = plot_schedule(
+            ncaa_schedule,
+            opponent_display=display,
+        )
+        plt.close(fig)
+
+
+def test_opponent_display_does_not_mutate_dataframe(ncaa_schedule):
+    original = ncaa_schedule.copy(deep=True)
+
+    fig, _ = plot_schedule(
+        ncaa_schedule,
+        opponent_display="short",
+    )
+
+    try:
+        pd.testing.assert_frame_equal(ncaa_schedule, original)
+    finally:
+        plt.close(fig)

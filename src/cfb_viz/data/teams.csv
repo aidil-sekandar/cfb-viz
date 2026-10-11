@@ -1,0 +1,139 @@
+team_id,school_name,mascot,short_name,ncaa_name,espn_abbreviation
+air-force,Air Force Academy,Falcons,Air Force,Air Force Falcons,AFA
+akron,University of Akron,Zips,Akron,Akron Zips,AKR
+alabama,University of Alabama,Crimson Tide,Alabama,Alabama Crimson Tide,ALA
+app-state,Appalachian State University,Mountaineers,App State,Appalachian State Mountaineers,APP
+arizona,University of Arizona,Wildcats,Arizona,Arizona Wildcats,ARIZ
+asu,Arizona State University,Sun Devils,Arizona State,Arizona State Sun Devils,ASU
+arkansas,University of Arkansas,Razorbacks,Arkansas,Arkansas Razorbacks,ARK
+arkansas-state,Arkansas State University,Red Wolves,Arkansas State,Arkansas State Red Wolves,ARST
+army,United States Military Academy,Black Knights,Army,Army Black Knights,ARMY
+auburn,Auburn University,Tigers,Auburn,Auburn Tigers,AUB
+ball-state,Ball State University,Cardinals,Ball State,Ball State Cardinals,BALL
+baylor,Baylor University,Bears,Baylor,Baylor Bears,BAY
+boise-state,Boise State University,Broncos,Boise State,Boise State Broncos,BSU
+boston,Boston College,Eagles,Boston College,Boston College Eagles,BC
+bowling-green,Bowling Green State University,Falcons,Bowling Green,Bowling Green Falcons,BGSU
+buffalo,University of Buffalo,Bulls,Buffalo,Buffalo Bulls,BUFF
+byu,Brigham Young University,Cougars,BYU,BYU Cougars,BYU
+cal,"University of California, Berkeley",Golden Bears,Cal,California Golden Bears,CAL
+central-michigan,Central Michigan University,Chippewas,Central Michigan,Central Michigan Chippewas,CMU
+charlotte,UNC Charlotte,49ers,Charlotte,Charlotte 49ers,CHAR
+cincinnati,University of Cincinnati,Bearcats,Cincinnati,Cincinnati Bearcats,CIN
+clemson,Clemson University,Tigers,Clemson,Clemson Tigers,CLEM
+coastal-carolina,Coastal Carolina University,Chanticleers,Coastal Carolina,Coastal Carolina Chanticleers,CCAR
+colorado,University of Colorado,Buffaloes,Colorado,Colorado Buffaloes,COLO
+colorado-state,Colorado State University,Rams,Colorado State,Colorado State Rams,CSU
+delaware,University of Delaware,Blue Hens,Delaware,Delaware Blue Hens,DEL
+duke,Duke University,Blue Devils,Duke,Duke Blue Devils,DUKE
+east-carolina,East Carolina University,Pirates,East Carolina,East Carolina Pirates,ECU
+eastern-michigan,Eastern Michigan University,Eagles,Eastern Michigan,Eastern Michigan Eagles,EMU
+fiu,Florida International University,Panthers,FIU,Florida International Panthers,FIU
+florida,University of Florida,Gators,Florida,Florida Gators,FLA
+fau,Florida Atlantic University,Owls,Florida Atlantic,Florida Atlantic Owls,FAU
+fsu,Florida State University,Seminoles,Florida State,Florida State Seminoles,FSU
+fresno-state,Fresno State University,Bulldogs,Fresno State,Fresno State Bulldogs,FRES
+georgia,University of Georgia,Bulldogs,Georgia,Georgia Bulldogs,UGA
+georgia-southern,Georgia Southern University,Eagles,Georgia Southern,Georgia Southern Eagles,GASO
+georgia-state,Georgia State University,Panthers,Georgia State,Georgia State Panthers,GAST
+georgia-tech,Georgia Institute of Technology,Yellow Jackets,Georgia Tech,Georgia Tech Yellow Jackets,GT
+hawaii,University of Hawaiʻi at Mānoa,Rainbow Warriors,Hawai'i,Hawai'i Rainbow Warriors,HAW
+houston,University of Houston,Cougars,Houston,Houston Cougars,HOU
+illinois,University of Illinois,Fighting Illini,Illinois,Illinois Fighting Illini,ILL
+indiana,Indiana University,Hoosiers,Indiana,Indiana Hoosiers,IND
+iowa,University of Iowa,Hawkeyes,Iowa,Iowa Hawkeyes,IOWA
+iowa-state,Iowa State University,Cyclones,Iowa State,Iowa State Cyclones,ISU
+jacksonville-state,Jacksonville State University,Gamecocks,Jacksonville State,Jacksonville State Gamecocks,JVST
+james-madison,James Madison University,Dukes,James Madison,James Madison Dukes,JMU
+kansas,University of Kansas,Jayhawks,Kansas,Kansas Jayhawks,KU
+kansas-state,Kansas State University,Wildcats,Kansas State,Kansas State Wildcats,KSU
+kennesaw-state,Kennesaw State University,Owls,Kennesaw State,Kennesaw State Owls,KENN
+kent-state,Kent State University,Golden Flashes,Kent State,Kent State Golden Flashes,KENT
+kentucky,University of Kentucky,Wildcats,Kentucky,Kentucky Wildcats,UK
+liberty,Liberty University,Flames,Liberty,Liberty Flames,LIB
+louisiana-lafayette,University of Louisiana at Lafayette,Ragin' Cajuns,Louisiana,Louisiana Ragin' Cajuns,ULL
+louisiana-tech,Louisiana Tech University,Bulldogs,Louisiana Tech,Louisiana Tech Bulldogs,LT
+louisville,University of Louisville,Cardinals,Louisville,Louisville Cardinals,LOU
+lsu,Louisiana State University,Tigers,LSU,LSU Tigers,LSU
+marshall,Marshall University,Thundering Herd,Marshall,Marshall Thundering Herd,MRSH
+maryland,University of Maryland,Terrapins,Maryland,Maryland Terrapins,UMD
+umass,University of Massachusetts,Minutemen,Massachusetts,Massachusetts Minutemen,UMASS
+memphis,University of Memphis,Tigers,Memphis,Memphis Tigers,MEM
+miami,University of Miami,Hurricanes,Miami,Miami Hurricanes,MIA
+miami-oh,Miami University,RedHawks,Miami (OH),Miami (OH) RedHawks,M-OH
+michigan,University of Michigan,Wolverines,Michigan,Michigan Wolverines,MICH
+michigan-state,Michigan State University,Spartans,Michigan State,Michigan State Spartans,MSU
+middle-tennessee,Middle Tennessee State University,Blue Raiders,Middle Tennessee,Middle Tennessee Blue Raiders,MTSU
+minnesota,University of Minnesota,Golden Gophers,Minnesota,Minnesota Golden Gophers,MINN
+mississippi-state,Mississippi State University,Bulldogs,Mississippi State,Mississippi State Bulldogs,MSST
+missouri,University of Missouri,Tigers,Missouri,Missouri Tigers,MIZ
+missouri-state,Missouri State University,Bears,Missouri State,Missouri State Bears,MOST
+navy,United States Naval Academy,Midshipmen,Navy,Navy Midshipmen,NAVY
+nc-state,North Carolina State University,Wolfpack,NC State,NC State Wolfpack,NCST
+nebraska,University of Nebraska,Cornhuskers,Nebraska,Nebraska Cornhuskers,NEB
+nevada,University of Nevada,Wolf Pack,Nevada,Nevada Wolf Pack,NEV
+new-mexico,University of New Mexico,Lobos,New Mexico,New Mexico Lobos,UNM
+new-mexico-state,New Mexico State University,Aggies,New Mexico State,New Mexico State Aggies,NMSU
+unc,University of North Carolina,Tar Heels,North Carolina,North Carolina Tar Heels,UNC
+ndsu,North Dakota State University,Bison,North Dakota State,North Dakota State Bison,NDSU
+north-texas,University of North Texas,Mean Green,North Texas,North Texas Mean Green,UNT
+northern-illinois,Northern Illinois University,Huskies,Northern Illinois,Northern Illinois Huskies,NIU
+northwestern,Northwestern University,Wildcats,Northwestern,Northwestern Wildcats,NW
+notre-dame,University of Notre Dame,Fighting Irish,Notre Dame,Notre Dame Fighting Irish,ND
+ohio,Ohio University,Bobcats,Ohio,Ohio Bobcats,OHIO
+ohio-state,The Ohio State University,Buckeyes,Ohio State,Ohio State Buckeyes,OSU
+oklahoma,University of Oklahoma,Sooners,Oklahoma,Oklahoma Sooners,OKLA
+oklahoma-state,Oklahoma State University,Cowboys,Oklahoma State,Oklahoma State Cowboys,OKST
+old-dominion,Old Dominion University,Monarchs,Old Dominion,Old Dominion Monarchs,ODU
+ole-miss,University of Mississippi,Rebels,Ole Miss,Ole Miss Rebels,MISS
+oregon,University of Oregon,Ducks,Oregon,Oregon Ducks,ORE
+oregon-state,Oregon State University,Beavers,Oregon State,Oregon State Beavers,ORST
+penn-state,Penn State University,Nittany Lions,Penn State,Penn State Nittany Lions,PSU
+pitt,University of Pittsburgh,Panthers,Pittsburgh,Pittsburgh Panthers,PITT
+purdue,Purdue University,Boilermakers,Purdue,Purdue Boilermakers,PUR
+rice,Rice University,Owls,Rice,Rice Owls,RICE
+rutgers,Rutgers University,Scarlet Knights,Rutgers,Rutgers Scarlet Knights,RUTG
+sacramento-state,Sacramento State University,Hornets,Sacramento State,Sacramento State Hornets,SAC
+sam-houston,Sam Houston State University,Bearkats,Sam Houston,Sam Houston Bearkats,SHSU
+sdsu,San Diego State University,Aztecs,San Diego State,San Diego State Aztecs,SDSU
+sjsu,San Jose State University,Spartans,San Jose State,San Jose State Spartans,SJSU
+smu,Southern Methodist University,Mustangs,SMU,SMU Mustangs,SMU
+south-alabama,University of South Alabama,Jaguars,South Alabama,South Alabama Jaguars,USA
+south-carolina,University of South Carolina,Gamecocks,South Carolina,South Carolina Gamecocks,SC
+southern-miss,University of Southern Mississippi,Golden Eagles,Southern Miss,Southern Miss Golden Eagles,USM
+stanford,Stanford University,Cardinal,Stanford,Stanford Cardinal,STAN
+syracuse,Syracuse University,Orange,Syracuse,Syracuse Orange,SYR
+tcu,Texas Christian University,Horned Frogs,TCU,TCU Horned Frogs,TCU
+temple,Temple University,Owls,Temple,Temple Owls,TEM
+tennessee,University of Tennessee,Volunteers,Tennessee,Tennessee Volunteers,TENN
+texas,University of Texas,Longhorns,Texas,Texas Longhorns,TEX
+texas-am,Texas A&M University,Aggies,Texas A&M,Texas A&M Aggies,TAMU
+texas-state,Texas State University,Bobcats,Texas State,Texas State Bobcats,TXST
+texas-tech,Texas Tech University,Red Raiders,Texas Tech,Texas Tech Red Raiders,TTU
+toledo,University of Toledo,Rockets,Toledo,Toledo Rockets,TOL
+troy,Troy University,Trojans,Troy,Troy Trojans,TROY
+tulane,Tulane University,Green Wave,Tulane,Tulane Green Wave,TULN
+tulsa,University of Tulsa,Golden Hurricane,Tulsa,Tulsa Golden Hurricane,TLSA
+uab,University of Alabama at Birmingham,Blazers,UAB,UAB Blazers,UAB
+ucf,University of Central Florida,Knights,UCF,UCF Knights,UCF
+ucla,"University of California, Los Angeles",Bruins,UCLA,UCLA Bruins,UCLA
+uconn,University of Connecticut,Huskies,UConn,UConn Huskies,CONN
+ul-monroe,University of Louisiana at Monroe,Warhawks,UL Monroe,UL Monroe Warhawks,ULM
+unlv,"University of Nevada, Las Vegas",Rebels,UNLV,UNLV Rebels,UNLV
+usc,University of Southern California,Trojans,USC,USC Trojans,USC
+south-florida,University of South Florida,Bulls,USF,South Florida Bulls,USF
+utah,University of Utah,Utes,Utah,Utah Utes,UTAH
+utah-state,Utah State University,Aggies,Utah State,Utah State Aggies,USU
+utep,University of Texas at El Paso,Miners,UTEP,UTEP Miners,UTEP
+utsa,University of Texas at San Antonio,Roadrunners,UTSA,UTSA Roadrunners,UTSA
+vanderbilt,Vanderbilt University,Commodores,Vanderbilt,Vanderbilt Commodores,VAN
+virginia,University of Virginia,Cavaliers,Virginia,Virginia Cavaliers,UVA
+virginia-tech,Virginia Tech,Hokies,Virginia Tech,Virginia Tech Hokies,VT
+wake-forest,Wake Forest University,Demon Deacons,Wake Forest,Wake Forest Demon Deacons,WAKE
+washington,University of Washington,Huskies,Washington,Washington Huskies,WASH
+washington-state,Washington State University,Cougars,Washington State,Washington State Cougars,WSU
+west-virginia,West Virginia University,Mountaineers,West Virginia,West Virginia Mountaineers,WVU
+western-kentucky,Western Kentucky University,Hilltoppers,Western Kentucky,Western Kentucky Hilltoppers,WKU
+western-michigan,Western Michigan University,Broncos,Western Michigan,Western Michigan Broncos,WMU
+wisconsin,University of Wisconsin,Badgers,Wisconsin,Wisconsin Badgers,WIS
+wyoming,University of Wyoming,Cowboys,Wyoming,Wyoming Cowboys,WYO
